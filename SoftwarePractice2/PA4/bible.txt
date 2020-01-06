@@ -1,0 +1,4 @@
+judges.txt judges_index
+2kings.txt 2kings_index
+ezra.txt ezra_index
+Ruth.txt Ruth_index

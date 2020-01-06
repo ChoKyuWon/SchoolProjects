@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+    <form action="/login/register/new" method="POST">
+        {% csrf_token %}
+        UserID: <input type="number" name="userID"><br>
+        UserPW: <input type="password" name="userPW1"><br>
+        UserPW: <input type="password" name="userPW2"><br>
+        isAdmin? <input type="checkbox" name="admin" value="1">
+        <button type="submit">Submit</button>
+    </form>
+</body>

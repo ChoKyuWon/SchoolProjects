@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {% for x, y in list %}
+    <div>{{x}} to {{y}} is reserved.</div>
+    {% endfor %}
+    <br>
+    <form action="/studyroom/reservation" method="POST">
+        {% csrf_token %}
+        start time: <input type="number" name="start"><br>
+        end time: <input type="number" name="end"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

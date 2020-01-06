@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Book search Page</title>
+    <script>
+        function search(){
+            var search_string = document.getElementById("text_box").value;
+            var cat = document.getElementById("category")
+            var category = cat.options[cat.selectedIndex].value;
+            var link = "http://127.0.0.1:8000/search/"+category+"/"+search_string;
+            location.href = link
+        }
+    </script>
+</head>
+<body>
+    <select id="category">
+        <option value="total">total</option>
+        <option value="name">Book name</option>
+        <option value="author_name">Author name</option>
+        <option value="ISBN">ISBN</option>
+    </select>
+    <input type="text" name="search_string" id="text_box">
+    <button value="search" onclick="search()" value="search">search!</button>
+</body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <script>
+        function login(){
+            userID = document.getElementById("id").value;
+            userPW = document.getElementById("pw").value;
+            var link = "http://127.0.0.1:8000/login/login/"+userID+"/"+userPW;
+            location.href = link
+        }
+        function logout(){
+            const name = "userinfo";
+            var cookies = document.cookie.split(';');
+            var flag = false;
+            for(var i in cookies){
+                if(cookies[i].search(name) != -1) {
+                    var link = "http://127.0.0.1:8000/login/logout";
+                    location.href = link
+                }
+            }
+        }
+        function register(){
+            var link = "http://127.0.0.1:8000/login/register";
+            location.href = link
+        }
+    </script>
+</head>
+<body>
+    ID:<input type="number" id="id"><br>
+    PW:<input type="password" id="pw"><br>
+    <button onclick="login()">login</button>
+    <button onclick="logout()">logout</button>
+    <button onclick="register()">register</button>
+</body>

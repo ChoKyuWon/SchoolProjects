@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Book search Page</title>
+    <script>
+        function reservation(bid){
+            var link = "http://127.0.0.1:8000/reservation/"+bid;
+            location.href = link
+        }
+        function favlist(bid){
+            var link = "http://127.0.0.1:8000/favorite_list/"+bid;
+            location.href = link
+        }
+    </script>
+    <style>
+        tr{
+            border: 1px solid gray;
+        }
+        th{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--
+        <tr>
+            <th>book name</th>
+            <th>book author</th>
+            <th>location</th>
+            <th>ISBN</th>
+            <th>status</th>
+            <th>reservation</th>
+        </tr>-->
+        <tr>
+        {% for x in name %}
+            <th>{{ x }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in author %}
+            <th>{{ x }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in location %}
+                <th>{{ x }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in isbn %}
+                <th>{{ x }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in status %}
+                <th>{{ x }}</th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in bid %}
+        <th><button onclick="reservation({{x}})">reserve!</button></th>
+        {% endfor %}
+        </tr>
+        <tr>
+        {% for x in bid %}
+        <th><button onclick="favlist({{x}})">favorite list</button></th>
+        {% endfor %}
+        </tr>
+    </table>
+</body>

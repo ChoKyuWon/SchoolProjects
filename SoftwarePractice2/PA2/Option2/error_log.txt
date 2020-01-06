@@ -1,0 +1,46 @@
+*** Error in `./server': double free or corruption (fasttop): 0x000000000144a3d0 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7f1d1c0a77e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8037a)[0x7f1d1c0b037a]
+/lib/x86_64-linux-gnu/libc.so.6(cfree+0x4c)[0x7f1d1c0b453c]
+./server[0x40120f]
+./server[0x401335]
+./server[0x40151f]
+./server[0x4016f4]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f1d1c050830]
+./server[0x400a99]
+======= Memory map: ========
+00400000-00401000 r-xp 00000000 00:00 36550                      /mnt/c/Users/조규원/OneDrive - 성균관대학교/학교/4학기/소프트웨어실습2/PA2/Option2/server
+00401000-00402000 r-xp 00001000 00:00 36550                      /mnt/c/Users/조규원/OneDrive - 성균관대학교/학교/4학기/소프트웨어실습2/PA2/Option2/server
+00601000-00602000 r--p 00001000 00:00 36550                      /mnt/c/Users/조규원/OneDrive - 성균관대학교/학교/4학기/소프트웨어실습2/PA2/Option2/server
+00602000-00603000 rw-p 00002000 00:00 36550                      /mnt/c/Users/조규원/OneDrive - 성균관대학교/학교/4학기/소프트웨어실습2/PA2/Option2/server
+01449000-0146a000 rw-p 00000000 00:00 0                          [heap]
+7f1d14000000-7f1d14021000 rw-p 00000000 00:00 0
+7f1d14021000-7f1d18000000 ---p 00000000 00:00 0
+7f1d1bbf0000-7f1d1bc06000 r-xp 00000000 00:00 295774             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1d1bc06000-7f1d1be05000 ---p 00000016 00:00 295774             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1d1be05000-7f1d1be06000 rw-p 00015000 00:00 295774             /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1d1be10000-7f1d1be1b000 r-xp 00000000 00:00 295798             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f1d1be1b000-7f1d1be1c000 ---p 0000b000 00:00 295798             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f1d1be1c000-7f1d1c01a000 ---p 0000000c 00:00 295798             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f1d1c01a000-7f1d1c01b000 r--p 0000a000 00:00 295798             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f1d1c01b000-7f1d1c01c000 rw-p 0000b000 00:00 295798             /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7f1d1c01c000-7f1d1c022000 rw-p 00000000 00:00 0
+7f1d1c030000-7f1d1c1f0000 r-xp 00000000 00:00 295746             /lib/x86_64-linux-gnu/libc-2.23.so
+7f1d1c1f0000-7f1d1c1f9000 ---p 001c0000 00:00 295746             /lib/x86_64-linux-gnu/libc-2.23.so
+7f1d1c1f9000-7f1d1c3f0000 ---p 000001c9 00:00 295746             /lib/x86_64-linux-gnu/libc-2.23.so
+7f1d1c3f0000-7f1d1c3f4000 r--p 001c0000 00:00 295746             /lib/x86_64-linux-gnu/libc-2.23.so
+7f1d1c3f4000-7f1d1c3f6000 rw-p 001c4000 00:00 295746             /lib/x86_64-linux-gnu/libc-2.23.so
+7f1d1c3f6000-7f1d1c3fa000 rw-p 00000000 00:00 0
+7f1d1c400000-7f1d1c425000 r-xp 00000000 00:00 295964             /lib/x86_64-linux-gnu/ld-2.23.so
+7f1d1c425000-7f1d1c426000 r-xp 00025000 00:00 295964             /lib/x86_64-linux-gnu/ld-2.23.so
+7f1d1c625000-7f1d1c626000 r--p 00025000 00:00 295964             /lib/x86_64-linux-gnu/ld-2.23.so
+7f1d1c626000-7f1d1c627000 rw-p 00026000 00:00 295964             /lib/x86_64-linux-gnu/ld-2.23.so
+7f1d1c627000-7f1d1c628000 rw-p 00000000 00:00 0
+7f1d1c6a0000-7f1d1c6a1000 rw-p 00000000 00:00 0
+7f1d1c6b0000-7f1d1c6b1000 rw-p 00000000 00:00 0
+7f1d1c6c0000-7f1d1c6c1000 rw-p 00000000 00:00 0
+7f1d1c6d0000-7f1d1c6d1000 rw-p 00000000 00:00 0
+7ffff14ca000-7ffff1cca000 rw-p 00000000 00:00 0                  [stack]
+7ffff2267000-7ffff2268000 r-xp 00000000 00:00 0                  [vdso]
+Aborted (core dumped)
