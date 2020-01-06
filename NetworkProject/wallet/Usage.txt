@@ -1,0 +1,9 @@
+Usage:
+    help : print some helpful menual
+    genwallet : Generate new wallet. If you want make testnet wallet, type 'genwallet testnet'
+    getwallet [address] : Get wallet from address. You need [address].pem file. If you have no pem file, generate new wallet.
+    send : send BTC to someone
+    addr : print your current wallet's address
+    history : Show your past transactions.
+    qrcode : make qrcode of your current wallet's address.
+    exit : exit program.

@@ -1,0 +1,5 @@
+*.java
+!Kotlin2Java.java
+*.class
+*.tokens
+*.interp

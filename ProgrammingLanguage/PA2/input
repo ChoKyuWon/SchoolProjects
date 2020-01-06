@@ -1,0 +1,43 @@
+package my.demo.header
+
+import java.util.*
+
+fun sum(a: Int, b: Int): Int {
+    if(a > b){
+        return a + b
+    }
+    else if (b < a){
+        return a-b
+    }
+    else{
+        val c: Int =1
+        return c
+    }
+    print("any sign of $a is bad")
+}
+
+fun sum(a: Int, b: Int) = a + b
+val a: Int = 1
+val b = 2
+val c: Int
+c = 3   
+
+fun main(){
+    for (x in 1..5) {
+        print(x)
+    }
+    for (x in 9 down 0 step 3) {
+        print(x)
+    }
+}
+
+fun main(){
+    fun StringLength(obj: Any): Int? {
+        if (obj is String){
+            return obj
+        }
+        return null
+    }
+    println(StringLength("String"))
+    println(StringLength(123))
+}

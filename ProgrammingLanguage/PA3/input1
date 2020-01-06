@@ -1,0 +1,8 @@
+fun main() { 
+    var a: Int = 1
+    val b: Int
+    val str = "Hello, World!"
+    b = a
+    a = 2
+    println(str + a + b) 
+}

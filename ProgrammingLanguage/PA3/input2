@@ -1,0 +1,12 @@
+fun mul(a: Int, b: Int): Int {  
+    return a*b
+}
+
+fun sum(x: Int, y: Int) = x + y 
+
+fun main() {
+    val sumResult = sum(4, 5)   
+    val mulResult = mul(4, 5) 
+    println("sumResult " + sumResult);
+    println("mulResult " + mulResult);
+}

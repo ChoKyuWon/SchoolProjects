@@ -1,0 +1,27 @@
+
+[Naive Bayesian validation]
+
+   humidity  temp   outlook  windy play
+2      high   hot  overcast  False  yes
+3      high  mild     rainy  False  yes
+4    normal  cool     rainy  False  yes
+6    normal  cool  overcast   True  yes
+8    normal  cool     sunny  False  yes
+9    normal  mild     rainy  False  yes
+10   normal  mild     sunny   True  yes
+11     high  mild  overcast   True  yes
+12   normal   hot  overcast  False  yes
+True 	Answer:  humidity = high : 0.363636 		 Your:  humidity = high : 0.363636
+True 	Answer:  humidity = normal : 0.636364 		 Your:  humidity = normal : 0.636364
+True 	Answer:  temp = cool : 0.333333 		 Your:  temp = cool : 0.333333
+True 	Answer:  temp = hot : 0.25 		 Your:  temp = hot : 0.25
+True 	Answer:  temp = mild : 0.416667 		 Your:  temp = mild : 0.416667
+True 	Answer:  outlook = overcast : 0.416667 		 Your:  outlook = overcast : 0.416667
+True 	Answer:  outlook = rainy : 0.333333 		 Your:  outlook = rainy : 0.333333
+True 	Answer:  outlook = sunny : 0.25 		 Your:  outlook = sunny : 0.25
+True 	Answer:  windy = False : 0.636364 		 Your:  windy = False : 0.636364
+True 	Answer:  windy = True : 0.363636 		 Your:  windy = True : 0.363636
+
+
+[Gaussian prob test]
+Answer:  0.241971 Your:  0.241971 	 True
