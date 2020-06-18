@@ -10,3 +10,6 @@
 [submodule "ComputerArchitecture"]
 	path = ComputerArchitecture
 	url = git@github.com:ChoKyuWon/ComputerArchitecture.git
+[submodule "ComputerNetwork"]
+	path = ComputerNetwork
+	url = git@github.com:ChoKyuWon/ComputerNetwork.git
