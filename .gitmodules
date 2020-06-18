@@ -4,3 +4,6 @@
 [submodule "SoftwarePractice1"]
 	path = SoftwarePractice1
 	url = git@github.com:ChoKyuWon/SoftwarePractice1.git
+[submodule "Algorithm"]
+	path = Algorithm
+	url = git@github.com:ChoKyuWon/Algorithm.git
