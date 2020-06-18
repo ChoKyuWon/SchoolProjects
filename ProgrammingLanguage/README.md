@@ -1,2 +1,2 @@
-# 2019 Spring Programming Language
-## 남범석 교수님
+## Programming Language
+2019 Spring - 남범석 교수님

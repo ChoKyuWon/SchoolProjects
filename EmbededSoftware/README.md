@@ -1,2 +1,2 @@
-# 2019 Spring Embeded Programming
-## 신동군 교수님
+## Embeded Programming
+2019 Spring - 신동군 교수님

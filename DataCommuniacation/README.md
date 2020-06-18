@@ -1,2 +1,2 @@
-# 2019 Spring Data Communication
-## 이태진 교수님
+## Data Communication
+2019 Spring - 이태진 교수님
