@@ -7,3 +7,6 @@
 [submodule "Algorithm"]
 	path = Algorithm
 	url = git@github.com:ChoKyuWon/Algorithm.git
+[submodule "ComputerArchitecture"]
+	path = ComputerArchitecture
+	url = git@github.com:ChoKyuWon/ComputerArchitecture.git
