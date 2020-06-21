@@ -13,3 +13,6 @@
 [submodule "ComputerNetwork"]
 	path = ComputerNetwork
 	url = git@github.com:ChoKyuWon/ComputerNetwork.git
+[submodule "DataCommunication"]
+	path = DataCommunication
+	url = git@github.com:ChoKyuWon/DataCommunication.git
