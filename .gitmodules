@@ -16,3 +16,6 @@
 [submodule "DataCommunication"]
 	path = DataCommunication
 	url = git@github.com:ChoKyuWon/DataCommunication.git
+[submodule "DataStructure"]
+	path = DataStructure
+	url = git@github.com:ChoKyuWon/DataStructure.git
